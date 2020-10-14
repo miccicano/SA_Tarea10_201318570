@@ -28,4 +28,3 @@ Arrancamos el comando `docker-compose up`.
 
 * docker system prune
 * docker system prune -a
-*
