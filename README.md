@@ -6,12 +6,8 @@ Arrancamos el comando `docker-compose up`.
     http://localhost:3000
 
 
-## Storing Data
-    http://localhost:3000/store/my-key\?some\=value\&some-other\=other-value
-
-
-## Fetching Data
-    http://localhost:3000/my-key
+## Bienvenido
+    http://localhost:3000/index
 
 
 ## Para actualizar algun cambio en nuestro docker se deberá de correr los siguientes comandos:
@@ -32,3 +28,4 @@ Arrancamos el comando `docker-compose up`.
 
 * docker system prune
 * docker system prune -a
+*
