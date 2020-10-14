@@ -28,3 +28,33 @@ Arrancamos el comando `docker-compose up`.
 
 * docker system prune
 * docker system prune -a
+
+
+## Agregamos pipel para la entrega continua
+
+pipeline {
+  agent any
+    
+  tools {nodejs "node"}
+    
+  stages {
+        
+    stage('Cloning Git') {
+      steps {
+        git 'https://github.com/miccicano/SA_Tarea10_201318570.git'
+      }
+    }
+        
+    stage('Install dependencies') {
+      steps {
+        bat 'npm install'
+      }
+    }
+     
+    stage('Test') {
+      steps {
+         bat 'npm test'
+      }
+    }      
+  }
+}
